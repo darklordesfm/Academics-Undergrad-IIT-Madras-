@@ -1,0 +1,12 @@
+#!/bin/bash
+
+ping -c 5000 www.iitm.ac.in > ping.txt
+sed 's/time=//' ping.txt | awk '{sum+=$7; sqrmean+=($7)^2/NR} END {NR-=5; mean=sum/NR; stdev=sqrt(sqrmean-(mean)^2); print "EE24B093", NR, mean, stdev}'
+rm -f ping.txt
+
+
+
+
+
+
+
