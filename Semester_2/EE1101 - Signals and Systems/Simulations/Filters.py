@@ -1,0 +1,50 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+t=np.linspace(-2,2,1000)
+x_t=np.where(np.abs(t)<=0.5,1,0)
+N=len(t)
+dt=t[1]-t[0]
+f=np.fft.fftshift(np.fft.fftfreq(N,d=dt))
+X_f=np.fft.fftshift(np.fft.fft(x_t))*dt
+W=1
+H_f=np.where(np.abs(t)<=0.5*W,1,0)
+Y_f=X_f*H_f
+y_t=np.real(np.fft.ifft(np.fft.ifftshift(Y_f))/dt)
+H2_f=np.where((np.abs(f-2)<=0.5)|(np.abs(f+2)<=0.5),1,0)
+Y2_f=X_f*H2_f
+y2_t=np.real(np.fft.ifft(np.fft.ifftshift(Y2_f))/dt)
+
+plt.figure(figsize=(12,10))
+plt.subplot(6,1,1)
+plt.plot(t,x_t)
+plt.title('rect(t)')
+plt.xlabel('t')
+plt.ylabel('x(t)')
+plt.subplot(6,1,2)
+plt.plot(f,np.abs(X_f))
+plt.title('spectrum')
+plt.xlabel('w')
+plt.ylabel('X(w)')
+plt.subplot(6,1,3)
+plt.plot(f,np.abs(Y_f))
+plt.title('Filtered Spectrum')
+plt.xlabel('w')
+plt.ylabel('Y(w)')
+plt.subplot(6,1,4)
+plt.plot(t,y_t)
+plt.title('Filtered output')
+plt.xlabel('t')
+plt.ylabel('y(t)')
+plt.subplot(6,1,5)
+plt.plot(f,np.abs(Y2_f))
+plt.title('Spectrum 2')
+plt.xlabel('w')
+plt.ylabel('Y2(w)')
+plt.subplot(6,1,6)
+plt.plot(t,y2_t)
+plt.title('Filtered output 2')
+plt.xlabel('t')
+plt.ylabel('y2(t)')
+plt.tight_layout()
+plt.show()
