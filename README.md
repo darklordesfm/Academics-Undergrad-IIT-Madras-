@@ -2,4 +2,4 @@
 
 Hello There!
 
-I'm Balasathya S, an UG student studying at IIT Madras, Dept. of Electrical Engineering. 
+I'm Balasathya, an UG student studying at IIT Madras, Dept. of Electrical Engineering. 
