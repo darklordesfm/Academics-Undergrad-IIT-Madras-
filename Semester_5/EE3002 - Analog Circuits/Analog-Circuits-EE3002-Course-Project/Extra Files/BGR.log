@@ -1,0 +1,33 @@
+LTspice 26.0.2 for Windows
+Circuit: E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net
+Start Time: Sat Nov  7 22:55:55 2026
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(3): This sub-circuit name is not defined.
+X§M1 VgateP VgateP Vdd Vdd pfet_05v0 W=8u L=4u ;§pnba D)G)S)B
+                           ^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(4): This sub-circuit name is not defined.
+X§M2 VgateN VgateP Vdd Vdd pfet_05v0 W=8u L=4u ;§pnba D)G)S)B
+                           ^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(5): This sub-circuit name is not defined.
+X§M3 VgateP VgateN N001 0 nfet_05v0 W=4u L=2u ;§pnba D)G)S)B
+                          ^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(6): This sub-circuit name is not defined.
+X§M4 VgateN VgateN N002 0 nfet_05v0 W=4u L=2u ;§pnba D)G)S)B
+                          ^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(7): This sub-circuit name is not defined.
+X§Q1 0 0 N002 pnp_05p00x05p00 m=1 ;§pnba C)B)E
+              ^^^^^^^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(8): This sub-circuit name is not defined.
+X§M5 V_bg VgateP Vdd Vdd pfet_05v0 W=8u L=4u ;§pnba D)G)S)B
+                         ^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(9): This sub-circuit name is not defined.
+X§Q2 0 0 N003 pnp_05p00x05p00 m=1 ;§pnba C)B)E
+              ^^^^^^^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(10): This sub-circuit name is not defined.
+X§U1 V_bg N003 0 ppolyf_u_3k r_length=109.1u r_width=2u ;§pnba A)B)Body
+                 ^^^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(11): This sub-circuit name is not defined.
+X§Q3 0 0 N004 pnp_05p00x05p00 m=8 ;§pnba C)B)E
+              ^^^^^^^^^^^^^^^
+E:\Sem 5 Temp\EE3002\Analog-Circuits-EE3002-Course-Project\BGR.net(12): This sub-circuit name is not defined.
+X§U2 N001 N004 0 ppolyf_u_3k r_length=12.82u r_width=2u ;§pnba A)B)Body
+                 ^^^^^^^^^^^

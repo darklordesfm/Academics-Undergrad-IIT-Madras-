@@ -1,0 +1,19 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal -80 -40 128 121
+WINDOW 0 24 -42 Bottom 2
+PIN -80 32 LEFT 8
+PINATTR PinName Vdd
+PINATTR SpiceOrder 1
+PIN 128 32 RIGHT 8
+PINATTR PinName V_bg
+PINATTR SpiceOrder 2
+PIN -80 0 LEFT 8
+PINATTR PinName VgateP
+PINATTR SpiceOrder 3
+PIN -80 64 LEFT 8
+PINATTR PinName VgateN
+PINATTR SpiceOrder 4
+PIN -80 96 LEFT 8
+PINATTR PinName Vgatebias
+PINATTR SpiceOrder 5
